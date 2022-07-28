@@ -207,6 +207,7 @@ sudo systemsetup -setcomputersleep Off > /dev/null
 # 0: Disable hibernation (speeds up entering sleep mode)
 # 3: Copy RAM to disk so the system state can still be restored in case of a
 #    power failure.
+# Check this out for reference: https://apple.stackexchange.com/a/115748
 sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
